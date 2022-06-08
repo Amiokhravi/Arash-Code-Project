@@ -1,0 +1,10 @@
+C:\Users\Ami\source\repos\clube2\clube2\bin\Debug\clube2.exe.config
+C:\Users\Ami\source\repos\clube2\clube2\bin\Debug\clube2.exe
+C:\Users\Ami\source\repos\clube2\clube2\bin\Debug\clube2.pdb
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.csprojAssemblyReference.cache
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.Form1.resources
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.Properties.Resources.resources
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.csproj.GenerateResource.cache
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.csproj.CoreCompileInputs.cache
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.exe
+C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.pdb

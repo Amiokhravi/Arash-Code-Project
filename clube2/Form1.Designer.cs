@@ -71,12 +71,8 @@
             this.tab_Control1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.register_group = new System.Windows.Forms.GroupBox();
-            this.txt_name = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_phone = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_family = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -92,13 +88,28 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txt_codemely = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.grp_custome_edit = new System.Windows.Forms.GroupBox();
+            this.btn_claer_customer = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.txt_family = new System.Windows.Forms.TextBox();
+            this.btn_add_customer = new System.Windows.Forms.Button();
+            this.btn_delete_customer = new System.Windows.Forms.Button();
+            this.grp_custome_list = new System.Windows.Forms.GroupBox();
+            this.grdCustomers = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.family = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txt_search_customers = new System.Windows.Forms.TextBox();
             this.tab_Control1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.register_group.SuspendLayout();
@@ -119,6 +130,9 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tabPage7.SuspendLayout();
+            this.grp_custome_edit.SuspendLayout();
+            this.grp_custome_list.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_add
@@ -513,7 +527,7 @@
             this.tab_Control1.Location = new System.Drawing.Point(12, 12);
             this.tab_Control1.Name = "tab_Control1";
             this.tab_Control1.SelectedIndex = 0;
-            this.tab_Control1.Size = new System.Drawing.Size(527, 310);
+            this.tab_Control1.Size = new System.Drawing.Size(527, 394);
             this.tab_Control1.TabIndex = 8;
             // 
             // tabPage1
@@ -524,20 +538,16 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(519, 284);
+            this.tabPage1.Size = new System.Drawing.Size(519, 368);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ثبت مشتری";
             // 
             // register_group
             // 
             this.register_group.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.register_group.Controls.Add(this.txt_name);
-            this.register_group.Controls.Add(this.label1);
             this.register_group.Controls.Add(this.btn_add);
             this.register_group.Controls.Add(this.label3);
-            this.register_group.Controls.Add(this.txt_phone);
             this.register_group.Controls.Add(this.label2);
-            this.register_group.Controls.Add(this.txt_family);
             this.register_group.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.register_group.Location = new System.Drawing.Point(293, 0);
             this.register_group.Name = "register_group";
@@ -545,25 +555,6 @@
             this.register_group.TabIndex = 18;
             this.register_group.TabStop = false;
             this.register_group.Text = "اطلاعات مشتری";
-            // 
-            // txt_name
-            // 
-            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_name.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_name.Location = new System.Drawing.Point(48, 30);
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(101, 21);
-            this.txt_name.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(204, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "نام ";
             // 
             // label3
             // 
@@ -575,14 +566,6 @@
             this.label3.TabIndex = 13;
             this.label3.Text = " تماس";
             // 
-            // txt_phone
-            // 
-            this.txt_phone.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_phone.Location = new System.Drawing.Point(48, 107);
-            this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(101, 21);
-            this.txt_phone.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -592,14 +575,6 @@
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "خانوادگی";
-            // 
-            // txt_family
-            // 
-            this.txt_family.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_family.Location = new System.Drawing.Point(48, 66);
-            this.txt_family.Name = "txt_family";
-            this.txt_family.Size = new System.Drawing.Size(101, 21);
-            this.txt_family.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -617,7 +592,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(519, 284);
+            this.tabPage2.Size = new System.Drawing.Size(519, 368);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ثبت فیلم";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -657,7 +632,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(519, 284);
+            this.tabPage3.Size = new System.Drawing.Size(519, 368);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "نمایش اطلاعات";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -691,7 +666,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(519, 284);
+            this.tabPage4.Size = new System.Drawing.Size(519, 368);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "بروزرسانی فلیم";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -731,7 +706,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(519, 284);
+            this.tabPage5.Size = new System.Drawing.Size(519, 368);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "بروز رسانی مشتری";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -769,7 +744,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(519, 284);
+            this.tabPage6.Size = new System.Drawing.Size(519, 368);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "ثبت کرایه";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -797,14 +772,12 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "بخش کرایه";
             // 
-            // pictureBox6
+            // txt_codemely
             // 
-            this.pictureBox6.Image = global::clube2.Properties.Resources._456465465;
-            this.pictureBox6.Location = new System.Drawing.Point(3, -3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(522, 295);
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.txt_codemely.Location = new System.Drawing.Point(31, 194);
+            this.txt_codemely.Name = "txt_codemely";
+            this.txt_codemely.Size = new System.Drawing.Size(100, 21);
+            this.txt_codemely.TabIndex = 15;
             // 
             // label6
             // 
@@ -815,52 +788,209 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "کد ملی";
             // 
-            // txt_codemely
+            // pictureBox6
             // 
-            this.txt_codemely.Location = new System.Drawing.Point(31, 194);
-            this.txt_codemely.Name = "txt_codemely";
-            this.txt_codemely.Size = new System.Drawing.Size(100, 21);
-            this.txt_codemely.TabIndex = 15;
+            this.pictureBox6.Image = global::clube2.Properties.Resources._456465465;
+            this.pictureBox6.Location = new System.Drawing.Point(3, -3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(522, 295);
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.button3);
-            this.tabPage7.Controls.Add(this.button2);
-            this.tabPage7.Controls.Add(this.button1);
+            this.tabPage7.Controls.Add(this.grp_custome_edit);
+            this.tabPage7.Controls.Add(this.grp_custome_list);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(519, 284);
+            this.tabPage7.Size = new System.Drawing.Size(519, 368);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // grp_custome_edit
             // 
-            this.button1.Location = new System.Drawing.Point(387, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.grp_custome_edit.Controls.Add(this.btn_claer_customer);
+            this.grp_custome_edit.Controls.Add(this.label22);
+            this.grp_custome_edit.Controls.Add(this.label12);
+            this.grp_custome_edit.Controls.Add(this.label1);
+            this.grp_custome_edit.Controls.Add(this.txt_name);
+            this.grp_custome_edit.Controls.Add(this.txt_phone);
+            this.grp_custome_edit.Controls.Add(this.txt_family);
+            this.grp_custome_edit.Controls.Add(this.btn_add_customer);
+            this.grp_custome_edit.Controls.Add(this.btn_delete_customer);
+            this.grp_custome_edit.Location = new System.Drawing.Point(9, 226);
+            this.grp_custome_edit.Name = "grp_custome_edit";
+            this.grp_custome_edit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grp_custome_edit.Size = new System.Drawing.Size(491, 121);
+            this.grp_custome_edit.TabIndex = 4;
+            this.grp_custome_edit.TabStop = false;
+            this.grp_custome_edit.Text = "ثبت اطلاعات مشتری";
             // 
-            // button2
+            // btn_claer_customer
             // 
-            this.button2.Location = new System.Drawing.Point(220, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_claer_customer.Location = new System.Drawing.Point(329, 81);
+            this.btn_claer_customer.Name = "btn_claer_customer";
+            this.btn_claer_customer.Size = new System.Drawing.Size(75, 23);
+            this.btn_claer_customer.TabIndex = 15;
+            this.btn_claer_customer.Text = "پاک شدن";
+            this.btn_claer_customer.UseVisualStyleBackColor = true;
+            this.btn_claer_customer.Click += new System.EventHandler(this.btn_claer_customer_Click);
             // 
-            // button3
+            // label22
             // 
-            this.button3.Location = new System.Drawing.Point(53, 226);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label22.Location = new System.Drawing.Point(47, 17);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(73, 13);
+            this.label22.TabIndex = 14;
+            this.label22.Text = "شماره تماس :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label12.Location = new System.Drawing.Point(219, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(112, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "نام خانوادگی مشتری :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(418, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "نام مشتری :";
+            // 
+            // txt_name
+            // 
+            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_name.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_name.Location = new System.Drawing.Point(334, 39);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(151, 21);
+            this.txt_name.TabIndex = 4;
+            // 
+            // txt_phone
+            // 
+            this.txt_phone.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_phone.Location = new System.Drawing.Point(6, 38);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(111, 21);
+            this.txt_phone.TabIndex = 6;
+            // 
+            // txt_family
+            // 
+            this.txt_family.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_family.Location = new System.Drawing.Point(123, 39);
+            this.txt_family.Name = "txt_family";
+            this.txt_family.Size = new System.Drawing.Size(205, 21);
+            this.txt_family.TabIndex = 5;
+            // 
+            // btn_add_customer
+            // 
+            this.btn_add_customer.Location = new System.Drawing.Point(410, 81);
+            this.btn_add_customer.Name = "btn_add_customer";
+            this.btn_add_customer.Size = new System.Drawing.Size(75, 23);
+            this.btn_add_customer.TabIndex = 0;
+            this.btn_add_customer.Text = "ذخیره";
+            this.btn_add_customer.UseVisualStyleBackColor = true;
+            this.btn_add_customer.Click += new System.EventHandler(this.btn_add_customer_Click);
+            // 
+            // btn_delete_customer
+            // 
+            this.btn_delete_customer.Location = new System.Drawing.Point(6, 81);
+            this.btn_delete_customer.Name = "btn_delete_customer";
+            this.btn_delete_customer.Size = new System.Drawing.Size(100, 23);
+            this.btn_delete_customer.TabIndex = 2;
+            this.btn_delete_customer.Text = "حذف مشتری";
+            this.btn_delete_customer.UseVisualStyleBackColor = true;
+            this.btn_delete_customer.Click += new System.EventHandler(this.btn_delete_customer_Click);
+            // 
+            // grp_custome_list
+            // 
+            this.grp_custome_list.Controls.Add(this.txt_search_customers);
+            this.grp_custome_list.Controls.Add(this.label23);
+            this.grp_custome_list.Controls.Add(this.grdCustomers);
+            this.grp_custome_list.Location = new System.Drawing.Point(6, 6);
+            this.grp_custome_list.Name = "grp_custome_list";
+            this.grp_custome_list.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grp_custome_list.Size = new System.Drawing.Size(497, 214);
+            this.grp_custome_list.TabIndex = 3;
+            this.grp_custome_list.TabStop = false;
+            this.grp_custome_list.Text = "لیست مشتری ها";
+            // 
+            // grdCustomers
+            // 
+            this.grdCustomers.AllowUserToAddRows = false;
+            this.grdCustomers.AllowUserToDeleteRows = false;
+            this.grdCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.name,
+            this.family,
+            this.phone});
+            this.grdCustomers.Location = new System.Drawing.Point(3, 46);
+            this.grdCustomers.Name = "grdCustomers";
+            this.grdCustomers.ReadOnly = true;
+            this.grdCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdCustomers.Size = new System.Drawing.Size(491, 165);
+            this.grdCustomers.TabIndex = 0;
+            this.grdCustomers.MouseClick += new System.Windows.Forms.MouseEventHandler(this.grdCustomers_MouseClick);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.HeaderText = "نام";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // family
+            // 
+            this.family.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.family.HeaderText = "نام خانوادگی";
+            this.family.Name = "family";
+            this.family.ReadOnly = true;
+            // 
+            // phone
+            // 
+            this.phone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.phone.HeaderText = "تلفن تماس";
+            this.phone.Name = "phone";
+            this.phone.ReadOnly = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label23.Location = new System.Drawing.Point(389, 17);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(99, 13);
+            this.label23.TabIndex = 13;
+            this.label23.Text = "جستجوی مشتری :";
+            // 
+            // txt_search_customers
+            // 
+            this.txt_search_customers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_search_customers.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_search_customers.Location = new System.Drawing.Point(9, 15);
+            this.txt_search_customers.Name = "txt_search_customers";
+            this.txt_search_customers.Size = new System.Drawing.Size(374, 21);
+            this.txt_search_customers.TabIndex = 14;
+            this.txt_search_customers.TextChanged += new System.EventHandler(this.txt_search_customers_TextChanged);
             // 
             // Form1
             // 
@@ -896,6 +1026,11 @@
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            this.grp_custome_edit.ResumeLayout(false);
+            this.grp_custome_edit.PerformLayout();
+            this.grp_custome_list.ResumeLayout(false);
+            this.grp_custome_list.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -942,12 +1077,8 @@
         private System.Windows.Forms.TextBox txt_id_show;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TabControl tab_Control1;
-        private System.Windows.Forms.TextBox txt_phone;
-        private System.Windows.Forms.TextBox txt_family;
-        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox register_group;
         private System.Windows.Forms.TabPage tabPage1;
@@ -969,9 +1100,24 @@
         private System.Windows.Forms.TextBox txt_codemely;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_delete_customer;
+        private System.Windows.Forms.Button btn_add_customer;
+        private System.Windows.Forms.GroupBox grp_custome_list;
+        private System.Windows.Forms.DataGridView grdCustomers;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn family;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private System.Windows.Forms.GroupBox grp_custome_edit;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.TextBox txt_phone;
+        private System.Windows.Forms.TextBox txt_family;
+        private System.Windows.Forms.Button btn_claer_customer;
+        private System.Windows.Forms.TextBox txt_search_customers;
+        private System.Windows.Forms.Label label23;
     }
 }
 

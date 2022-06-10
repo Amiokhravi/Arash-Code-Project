@@ -8,3 +8,13 @@ C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.csproj.GenerateResource
 C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.csproj.CoreCompileInputs.cache
 C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.exe
 C:\Users\Ami\source\repos\clube2\clube2\obj\Debug\clube2.pdb
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\bin\Debug\clube2.exe.config
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\bin\Debug\clube2.exe
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\bin\Debug\clube2.pdb
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.csproj.AssemblyReference.cache
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.Form1.resources
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.Properties.Resources.resources
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.csproj.GenerateResource.cache
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.csproj.CoreCompileInputs.cache
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.exe
+E:\Projects\C#\Desctop\Arash-Code-Project\clube2\obj\Debug\clube2.pdb

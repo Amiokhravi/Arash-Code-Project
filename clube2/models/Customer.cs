@@ -8,17 +8,17 @@ namespace clube2.models
 {
     public class Customer
     {
+        private string _id;
         
         public Customer(string id, string name, string family, string phone)
         {
-            if(id != null)
-            {
-                this.id = id;
-            }
+            this.id = id;
             this.name = name;
             this.family = family;
             this.phone = phone;
         }
+
+
         /// <summary>
         /// شناسه مشتری
         /// </summary>
@@ -26,17 +26,18 @@ namespace clube2.models
         {
             get
             {
-                return id;
+                
+                return _id;
             }
             set
             {
                 if (value == null)
                 {
-                    id = new Guid().ToString();
+                    _id = Guid.NewGuid().ToString();
                 }
                 else
                 {
-                    id = value;
+                    _id= value;
                 }
             }
         }
